@@ -1,8 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+  /* background: #e0e0e0; */
+  background-color: #ffff;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Nav  */
+nav{
+  width: 100%;
+  height: 50px;
+  background-color: aliceblue; 
+}
+nav> ul{
+  margin-left: 750px;    
+}
+
+nav> ul> a> li{
+  display: inline-block;
+  padding: 15px;  
+  color: rgb(65, 65, 165);  
+}
+
+/* Calculator styling */
+.calc-container {
+  width: 320px;
+  height: 490px;
+  background: #e0e0e0;
+  box-shadow:  5px 5px 10px #c1c1c1,
+             -5px -5px 10px #f5f5f5;
+  margin: 0 auto;
+  padding: 32px 16px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  
+}
+.calc-container .result {
+  width: 100%;
+  height: 80px;
+  background: #e0e0e0;
+  box-shadow:  5px 5px 10px #c1c1c1,
+             -5px -5px 10px #ffffff;
+}
+.calc-container .result p {
+  font-size: 25pt;
+  overflow-y: auto;
+  text-align: right;
+  color: black;
+  padding-right: 10px;
+  
+}
+
+.calc-container .buttons {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em; 
+  width: 100%;
+}
+.calc-container .buttons .button, .calc-container .buttons .num-button  {
+  cursor: pointer;
+  text-align: center;
+  width: 70px;
+  font-size:18px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+  background: #e0e0e0;
+  box-shadow:  5px 5px 10px #c1c1c1,
+             -5px -5px 10px #f3f3f3;
+}
+#clear{
+  background-color: red;
+}
+#total{
+  background-color: green;
+}
+.button:hover{
+  color: #3498db;
+ 
+}
+
+/*  Big Button */
+.calc-container .buttons .zero {
+  /* grid-column: 1/2; */
+  width: 45%;
+  font-size: 20px;
+  color: black;
+  background: #e0e0e0;
+  box-shadow:  5px 5px 10px #c1c1c1,
+             -5px -5px 10px #ffffff;
+}
+
+.zero:hover{
+  color: #3498db;
+ 
+}
+.action-btn {
+  color: grey;
+  font-weight: bold;
+}
+
+.calc-action-btn{
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+}
+/* Table Calculator CSS */
+h2{
+  margin-top: 45px;
+   margin-left: 40% ;
+}
 .table{
-    margin: 150px 250px;
-    
-    
+  margin: 80px 40%;
+  cursor: pointer;
+  
 }
 .result{
-    text-align: right;
+  text-align: right;
 }

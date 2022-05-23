@@ -1,52 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calculator.css">
-    <title>Document</title>
-</head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neumorphism calculator design</title>
+  <link rel="stylesheet" href="calculator.css">  
+  </head>
 <body>
-    <div class="table">
-        <table border="2px" width="250px" height="300px">
-            <thead>
-                <tr class="result">
-                    <th colspan="4">0</th>
-                </tr>
-                <tr>
-                    <th bgcolor="red">AC</th>
-                    <th>MC</th>
-                    <th>%</th>
-                    <th>/</th>
-                </tr>
-                <tr>
-                    <th>7</th>
-                    <th>8</th>
-                    <th>9</th>
-                    <th>*</th>
-                </tr>
-                <tr>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>-</th>
-                </tr>
-                <tr>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>+</th>
-                </tr>
-                <tr>
-                    <th>0</th>
-                    <th>.</th>
-                    <th colspan="2" bgcolor="green">=</th>
-                </tr>
-            </thead>    
-    
-        </table>
+  <header>
+    <div class="container">
+        <nav>
+            <ul>
+                <a href="/index.html"><li>About Me</li></a>
+                <a href="/Contact.html"><li>Contact</li></a>
+                <a href="/Register.html"><li>Register</li></a> 
+                <a href="/login.html"><li>LogIn</li></a>
+                <a href="calculator.html"><li>Calculator</li></a>
+            </ul>
+        </nav>
     </div>
-    
+</header>
+    <h2>Flexbox Calculator</h2>
+    <div class="calc-container">
+        <div class="result">
+        <p id="result-box">0</p>
+        </div>
+        <div class="buttons">
+            <div class="button action-btn" id="clear"> AC </div>
+            <div class="button action-btn"> MC</div>
+            <div class="button num-button  action-btn"> %</div>
+            <div class="button num-button  calc-action-btn"> /</div>
+        </div>
+        <div class="buttons">
+            <div class="button num-button seven">7</div>
+            <div class="button num-button eight">8</div>
+            <div class="button num-button  nine">9</div>
+            <div class="button num-button  calc-action-btn">*</div>
+        </div>
+        <div class="buttons">
+            <div class="button num-button  four">4</div>
+            <div class="button num-button  five">5</div>
+            <div class="button num-button  six">6</div>
+            <div class="button num-button  calc-action-btn">-</div>
+        </div>
+        <div class="buttons">
+            <div class="button num-button  one">1</div>
+            <div class="button num-button  two">2</div>
+            <div class="button num-button  three">3</div>
+            <div class="button num-button  calc-action-btn">+</div>
+        </div>
+        <div class="buttons">
+            <div class="button num-button  zero">0</div>
+            <div class="button num-button  point">.</div>
+            <div class="button calc-action-btn" id="total">=</div>
+        </div>
+
+    </div>
+
+    <h2>Table Calculator</h2>
+        <div class="table">
+            <table border="2px" width="250px" height="300px">
+                <thead>
+                    <tr class="result">
+                        <th colspan="4">0</th>
+                    </tr>
+                    <tr>
+                        <th bgcolor="red">AC</th>
+                        <th>MC</th>
+                        <th>%</th>
+                        <th>/</th>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>*</th>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>-</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>+</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">0</th>
+                        <th>.</th>
+                        <th  bgcolor="green">=</th>
+                    </tr>
+                </thead>    
+        
+            </table>
+        </div>
+        
 </body>
+
 </html>
