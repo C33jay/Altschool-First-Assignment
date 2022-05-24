@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  /* background: #e0e0e0; */
   background-color: #ffff;
   font-family: 'Montserrat', sans-serif;
+  
 }
 /* Nav  */
 nav{
@@ -12,7 +17,7 @@ nav{
   background-color: aliceblue; 
 }
 nav> ul{
-  margin-left: 750px;    
+  margin-left: 800px;    
 }
 
 nav> ul> a> li{
